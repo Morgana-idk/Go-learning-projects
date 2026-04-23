@@ -3,13 +3,16 @@ package main
 import "fmt"
 
 func main() {
-	var nome string = "Pedro"
-	var idade int = 12
-	if idade >= 12 && idade < 18 {
-		fmt.Println(nome, "tem", idade, "anos. E é adolescente")
-	} else if idade < 12 {
-		fmt.Println(nome, "tem", idade, "anos. E é criança")
-	} else {
-		fmt.Println(nome, "tem", idade, "anos. E é adulto")
+	nomes := []string{
+		"Pedro",
+		"Davi",
+		"Alysson",
+		"Nicole",
 	}
+	nomes = append(nomes, "Não sei")
+	for _, nome := range nomes {
+		fmt.Println((nome))
+	}
+	fmt.Println("brutal")
 }
+d
